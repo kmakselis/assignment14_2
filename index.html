@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    input {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 208px;
+      margin-bottom: 10px;
+    }
+
+    #table1 {
+      border: 2px solid #ffbf00;
+      border-collapse: collapse;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #thead1 {
+      background: #ffbf00;
+      color: black;
+      height: 50px;
+    }
+
+    td {
+      background: #1E3163;
+      color: white;
+      border: 2px solid orange;
+      padding: 20px;
+      width: 170px;
+      text-align: left;
+    }
+
+    #th1 {
+      background: #ffae42;
+    }
+  </style>
+  <title>Append table</title>
+</head>
+  <body>
+
+    <h1>Append table</h1>
+    <div class="info">
+      <input id="name2" type="text"></input>
+      <input id="surname" type="text"></input>
+      <input id="number" type="number"></input>
+    </div>
+    <div class="buttons">
+      <button id="add">Pridėti</button>
+      <button id="remove">Ištrinti pirmą</button>
+      <button id="removeLast">Ištrinti paskutinį</button>
+    </div>
+
+    <table id="table1">
+      <thead id="thead1">
+        <tr id="header">
+          <th>VARDAS</th>
+          <th id="th1">PAVARDĖ</th>
+          <th>AMŽIUS</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td>Jonas</td>
+          <td>Rimkus</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>Vestina</td>
+          <td>Petronytė</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>Marius</td>
+          <td>Dulinskas</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
